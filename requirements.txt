@@ -5,9 +5,13 @@ gym-minigrid==1.0.3
 jupyter==1.0.0
 matplotlib>=3.8.2
 moviepy==1.0.3
-numpy>=1.21.6
+# Pin NumPy 1.x: NumPy 2.x breaks binary compatibility with pandas 2.0.x wheels (dtype size error on import).
+numpy>=1.23.5,<2.0.0
 pandas==2.0.3
 seaborn>=0.13.0
 setuptools==63.2.0
 torch>=1.12.0
 wandb==0.12.21
+stable-baselines3>=2.0,<3
+shimmy>=2.0
+gymnasium>=1.0.0
